@@ -9,7 +9,7 @@
     "test": "ng test",
     "heroku-postbuild": "ng build --prod"
   },
-  "proxy": "https://open-l-project.herokuapp.com/",
+  "proxy": "https://open-l-project.herokuapp.com",
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
