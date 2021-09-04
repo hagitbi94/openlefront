@@ -9,7 +9,7 @@ import {Observable} from 'rxjs';
 
 export class ProductService{
 	
-	private url = 'http://localhost:8095/product';
+	private url = 'https://open-l-project.herokuapp.com/product';
 	
 	
 	 constructor(private http: HttpClient) {
