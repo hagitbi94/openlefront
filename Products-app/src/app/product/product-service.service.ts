@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import {Observable} from 'rxjs';
 
 export class ProductService{
 	
-	private url = 'https://open-l-project.herokuapp.com/product';
+	private url = environment.baseUrl;
 	
 	
 	 constructor(private http: HttpClient) {
