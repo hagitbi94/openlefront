@@ -1,0 +1,39 @@
+<div align='center'><h1>Products with Angular</h1></div>
+
+<div>
+  <table class="table" style="width: 70%">
+    <tr>
+      <th>Item Number</th>
+      <th>Product Name</th>
+      <th>Amount</th>
+      <th>Inventory Code</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let product of products">
+      <td>
+        {{product.itemNo}}
+      </td>
+      <td>
+        {{product.name}}
+      </td>
+       <td>
+        {{product.amount}}
+      </td>
+       <td>
+        {{product.inventoryCode}}
+      </td>
+      <td>
+       <div> <button  type="button" (click)="deleteProduct(product)">Delete</button></div>
+      </td>
+        <td>
+       <div> <button  type="button" (click)="editProduct(product)">Edit</button></div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addProduct()">Add Product</button>
+  </p>
+</div>
+<router-outlet></router-outlet>

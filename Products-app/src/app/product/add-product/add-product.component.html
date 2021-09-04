@@ -1,0 +1,33 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add Product</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+   <div class="form-group">
+      <label for="itemNo">Item Number:</label>
+      <input type="text" formControlName="itemNo" placeholder="itemNo" name="itemNo" class="form-control"
+             id="itemNo">
+    </div>
+    <br/>
+    <div class="form-group">
+      <label for="name">Product Name:</label>
+      <input type="text" formControlName="name" placeholder="name" name="name" class="form-control"
+             id="name">
+    </div>
+    <br/>
+
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input type="text" formControlName="amount" placeholder="amount" name="amount" class="form-control"
+             id="amount">
+    </div>
+
+    <br/>
+      <div class="form-group">
+      <label for="inventoryCode">Inventory Code:</label>
+      <input type="text" formControlName="inventoryCode" placeholder="inventoryCode" name="inventoryCode" class="form-control"
+             id="inventoryCode">
+    </div>
+
+    <br/>
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>
